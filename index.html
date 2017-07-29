@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>learn node</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+   <h1>This is Allen's First Web by Node Server!</h1>
+   <div class="box"></div>
+   <script src="js/index.js"></script>
+   <script>
+        var article=document.createElement('div');
+        article.className='article';
+        article.innerText="Allen is spiderman,batman,superman,ironman";
+        var box=document.getElementsByClassName('box');
+        setTimeout(function(){
+            box[0].appendChild(article);
+        },3000);
+    </script>
+</body>
+</html>
